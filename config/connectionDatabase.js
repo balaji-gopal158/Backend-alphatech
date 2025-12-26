@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 const connectDataBase = () => {
-  const uri = process.env.database_Uri_cloud;
+  const uri = process.env.database_Uri;
 
   if (!uri) {
     console.error('❌ MongoDB URI is missing in environment variables (database_Uri_cloud)');
